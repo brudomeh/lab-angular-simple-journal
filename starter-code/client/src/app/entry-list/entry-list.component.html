@@ -1,0 +1,11 @@
+<app-entry-form></app-entry-form>
+
+<div class="entries">
+  <div class="entry" *ngFor="let entry of entries">
+    <a [routerLink]="['/',entry._id]">
+        <h2>{{entry.title}}</h2>
+        <p>{{entry.date|date}}</p>
+    </a>
+      
+  </div>
+</div>

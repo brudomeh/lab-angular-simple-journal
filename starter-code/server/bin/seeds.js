@@ -47,6 +47,6 @@ const entries = [
 
 JournalEntry.create(entries, (err, entries) => {
   if (err){ throw(err) }
-  console.log("Success", entries);
+  console.log("Success, entries seed completed!");
   mongoose.connection.close();
 })

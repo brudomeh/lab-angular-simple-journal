@@ -1,0 +1,14 @@
+<form (ngSubmit)="jeS.addEntry(title.value,content.value).subscribe()" [ngStyle]="style" >
+  <div>
+    <label for="title">Title</label>
+    <input #title type="text" name="title" id="">
+  </div>
+  <div>
+      <label for="content">Content</label>
+      <textarea #content name="content" id="" cols="30" rows="5"></textarea>
+    </div>
+    <button>
+      Add Entry
+    </button>
+</form>
+<button (click)="toggleDisplay()">New Entry</button>
